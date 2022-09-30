@@ -61,5 +61,5 @@ CREATE TABLE visits (
     animals_id     int,
     vets_id        int,
     date_of_visit  date,
-    PRIMARY KEY(animals_id, vets_id)
+    PRIMARY KEY(animals_id, vets_id, date_of_visit)
 );

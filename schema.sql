@@ -58,8 +58,16 @@ CREATE TABLE specializations (
 );
 
 CREATE TABLE visits (
-    animals_id     int,
-    vets_id        int,
+    animal_id     int,
+    vet_id        int,
     date_of_visit  date,
-    PRIMARY KEY(animals_id, vets_id, date_of_visit)
 );
+
+ALTER TABLE visits ADD COLUMN id INT GENERATED ALWAYS AS IDENTITY;
+ALTER TABLE visits ADD CONSTRAINT visits_pk PRIMARY KEY(id);
+
+CREATE INDEX animal_id_index ON visits(animal_id ASC);
+
+CREATE INDEX vet_id_index ON visits(vet_id DESC);
+
+CREATE INDEX email_index ON owners(email ASC);

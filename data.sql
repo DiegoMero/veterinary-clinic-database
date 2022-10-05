@@ -111,62 +111,62 @@ VALUES (1, 3);
 INSERT INTO specializations (species_id, vets_id)
 VALUES (2, 4);
 
-INSERT INTO visits (animals_id, vets_id, date_of_visit)
+INSERT INTO visits (animal_id, vet_id, date_of_visit)
 VALUES (1, 1, 'May 24, 2020');
 
-INSERT INTO visits (animals_id, vets_id, date_of_visit)
+INSERT INTO visits (animal_id, vet_id, date_of_visit)
 VALUES (1, 3, 'Jul 22, 2020');
 
-INSERT INTO visits (animals_id, vets_id, date_of_visit)
+INSERT INTO visits (animal_id, vet_id, date_of_visit)
 VALUES (2, 4, 'Feb 2, 2021');
 
-INSERT INTO visits (animals_id, vets_id, date_of_visit)
+INSERT INTO visits (animal_id, vet_id, date_of_visit)
 VALUES (3, 2, 'Jan 5, 2020');
 
-INSERT INTO visits (animals_id, vets_id, date_of_visit)
+INSERT INTO visits (animal_id, vet_id, date_of_visit)
 VALUES (3, 2, 'Mar 8, 2020');
 
-INSERT INTO visits (animals_id, vets_id, date_of_visit)
+INSERT INTO visits (animal_id, vet_id, date_of_visit)
 VALUES (3, 2, 'May 14, 2020');
 
-INSERT INTO visits (animals_id, vets_id, date_of_visit)
+INSERT INTO visits (animal_id, vet_id, date_of_visit)
 VALUES (4, 3, 'May 4, 2021');
 
-INSERT INTO visits (animals_id, vets_id, date_of_visit)
+INSERT INTO visits (animal_id, vet_id, date_of_visit)
 VALUES (5, 4, 'Feb 24, 2021');
 
-INSERT INTO visits (animals_id, vets_id, date_of_visit)
+INSERT INTO visits (animal_id, vet_id, date_of_visit)
 VALUES (6, 2, 'Dec 21, 2019');
 
-INSERT INTO visits (animals_id, vets_id, date_of_visit)
+INSERT INTO visits (animal_id, vet_id, date_of_visit)
 VALUES (6, 1, 'Aug 10, 2020');
 
-INSERT INTO visits (animals_id, vets_id, date_of_visit)
+INSERT INTO visits (animal_id, vet_id, date_of_visit)
 VALUES (6, 2, 'Apr 8, 2021');
 
-INSERT INTO visits (animals_id, vets_id, date_of_visit)
+INSERT INTO visits (animal_id, vet_id, date_of_visit)
 VALUES (7, 3, 'Sep 29, 2019');
 
-INSERT INTO visits (animals_id, vets_id, date_of_visit)
+INSERT INTO visits (animal_id, vet_id, date_of_visit)
 VALUES (8, 4, 'Oct 3, 2020');
 
-INSERT INTO visits (animals_id, vets_id, date_of_visit)
+INSERT INTO visits (animal_id, vet_id, date_of_visit)
 VALUES (8, 4, 'Nov 4, 2020');
 
-INSERT INTO visits (animals_id, vets_id, date_of_visit)
+INSERT INTO visits (animal_id, vet_id, date_of_visit)
 VALUES (9, 2, 'Jan 24, 2019');
 
-INSERT INTO visits (animals_id, vets_id, date_of_visit)
+INSERT INTO visits (animal_id, vet_id, date_of_visit)
 VALUES (9, 2, 'May 15, 2019');
 
-INSERT INTO visits (animals_id, vets_id, date_of_visit)
+INSERT INTO visits (animal_id, vet_id, date_of_visit)
 VALUES (9, 2, 'Feb 27, 2020');
 
-INSERT INTO visits (animals_id, vets_id, date_of_visit)
+INSERT INTO visits (animal_id, vet_id, date_of_visit)
 VALUES (9, 2, 'Aug 3, 2020');
 
-INSERT INTO visits (animals_id, vets_id, date_of_visit)
+INSERT INTO visits (animal_id, vet_id, date_of_visit)
 VALUES (10, 3, 'May 24, 2020');
 
-INSERT INTO visits (animals_id, vets_id, date_of_visit)
+INSERT INTO visits (animal_id, vet_id, date_of_visit)
 VALUES (10, 1, 'Jan 11, 2021');

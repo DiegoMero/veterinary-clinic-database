@@ -42,3 +42,10 @@ CREATE TABLE patients (
     date_of_birth       date,
     PRIMARY KEY(id)
 );
+
+CREATE TABLE medical_histories-treatments-jointable (
+    medical_history_id       int,
+    treatment_id             int,
+    FOREIGN KEY(medical_history_id) REFERENCES medical_histories(id),
+    FOREIGN KEY (treatment_id) REFERENCES treatments(id)
+);

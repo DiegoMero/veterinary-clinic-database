@@ -2,6 +2,10 @@
 
 > A relational database for a vet clinic.
 
+## Diagram schema 
+![vet_clinic_diagram_schema](https://user-images.githubusercontent.com/95837757/194035283-07dcc7b5-dd11-441c-a079-9654eecdae2f.jpg)
+
+
 ## Authors
 
 👤 **Diego Mero**

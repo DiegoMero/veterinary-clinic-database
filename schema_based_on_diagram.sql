@@ -3,7 +3,8 @@ CREATE TABLE medical_histories (
     admitted_at     timestamp,
     patient_id      int,
     status          varchar(n),
-    PRIMARY KEY(id)
+    PRIMARY KEY(id),
+    FOREIGN KEY(patient_id) REFERENCES patients(id)
 );
 
 CREATE TABLE treatments (
@@ -20,7 +21,9 @@ CREATE TABLE invoice_items (
     total_price           decimal,
     invoice_id            int,
     treatment_id          int,
-    PRIMARY KEY(id)
+    PRIMARY KEY(id),
+    FOREIGN KEY(invoice_id) REFERENCES invoices(id),
+    FOREIGN KEY(treatment_id) REFERENCES treatments(id)
 );
 
 CREATE TABLE invoices (
@@ -29,7 +32,8 @@ CREATE TABLE invoices (
     generated_at          timestamp,
     payed_at              timestamp,
     medical_history_id    int,
-    PRIMARY KEY(id)
+    PRIMARY KEY(id),
+    FOREIGN KEY(medical_history_id) REFERENCES medical_histories(id)
 );
 
 CREATE TABLE patients (
@@ -38,19 +42,3 @@ CREATE TABLE patients (
     date_of_birth       date,
     PRIMARY KEY(id)
 );
-
-ALTER TABLE medical_histories
-ADD CONSTRAINT patient_id_fk
-FOREIGN KEY(patient_id) REFERENCES patients(id);
-
-ALTER TABLE invoices
-ADD CONSTRAINT medical_history_id_fk
-FOREIGN KEY(medical_history_id) REFERENCES medical_histories(id);
-
-ALTER TABLE invoice_items
-ADD CONSTRAINT invoice_id_fk
-FOREIGN KEY(invoice_id) REFERENCES invoices(id);
-
-ALTER TABLE invoice_items
-ADD CONSTRAINT treatment_id_fk
-FOREIGN KEY(treatment_id) REFERENCES treatments(id);
